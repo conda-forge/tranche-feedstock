@@ -1,6 +1,6 @@
 context:
   name: tranche
-  version: "0.6.0"
+  version: "0.6.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: c7a32bbe48bf689f601933c607ea054cc119f90e5c16ee63d31d80f53765ddf4
+  sha256: b2c7c33e3c4d244b93d704fd417ec4cc08bf762ceda0e3b60111c3bbf9dc46c6
 
 build:
   script: python -m pip install . -vv --no-deps --no-build-isolation
